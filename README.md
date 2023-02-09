@@ -1,2 +1,2 @@
-# SARP
-- Smart Assessment Results Provider
+# SARI
+- Smart Assessment Results Interface
