@@ -1,2 +1,2 @@
-# SARI
-- Smart Assessment Results Interface
+# AIMAS
+- Assessment Information Manipulation and Analytics System
