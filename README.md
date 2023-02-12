@@ -1,2 +1,2 @@
-# SARP
-- Smart Assessment Results Provider
+# AIMAS
+- Assessment Information Manipulation and Analytics System
