@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:Class="AIMAS.MainWindow"
+		Title="AIMAS"
+		Width="300" Height="150">
+
+		<Window.Styles>
+			<Style Selector="TextBlock.lh1">
+				<Setter Property="FontSize" Value="24"/>
+				<Setter Property="FontWeight" Value="Bold"/>
+				<Setter Property="HorizontalAlignment" Value="Center"/>
+				<Setter Property="VerticalAlignment" Value="Top"/>
+			</Style>
+		</Window.Styles>
+
+		<Panel>
+			<StackPanel>
+				<TextBlock Classes="lh1">AIMAS</TextBlock>
+			</StackPanel>
+			<StackPanel Margin="15" Spacing="5" VerticalAlignment="Bottom">
+				<TextBox Watermark="Username"
+						 x:Name="txtUsername"
+						 Text="{Binding UsernameText}"/>
+
+				<TextBox Watermark="Password"
+						 PasswordChar="*"
+						 x:Name="txtPassword"
+						 Text="{Binding PasswordText}"/>
+
+				<Button Content="{Binding AuthButtonText}"
+						Command="{Binding AuthButtonClicked}"
+						HorizontalAlignment="Center"/>
+			</StackPanel>
+		</Panel>
+</Window>
